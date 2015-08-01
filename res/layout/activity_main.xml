@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dermotblair.touchball.MainActivity" 
+    >
+    
+    <LinearLayout 
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/topLayout" >
+
+            <TextView
+                android:id="@+id/scoreTextViewFixed"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:text="Score: "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/scoreTextView"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            
+            <TextView
+                android:id="@+id/missedBallCountTextViewFixed"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:text="Missed: "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/missedBallCountTextView"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            
+            <TextView
+                android:id="@+id/timeTextViewFixed"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:text="Time: "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/timeTextView"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:text="0:00"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </LinearLayout>
+        
+        <com.dermotblair.touchball.TouchView
+        android:id="@+id/touchView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+	    <!-- android:indeterminateDrawable="@drawable/progress" -->
+    </LinearLayout>
+    
+    <LinearLayout
+    android:id="@+id/progressBarLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="Loading scoreboard..." />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#C0C0C0" />
+	</LinearLayout>
+
+</RelativeLayout>

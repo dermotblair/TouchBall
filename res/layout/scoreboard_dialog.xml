@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+      
+		<ScrollView 
+		    android:layout_width="match_parent"
+		    android:layout_height="0dp" 
+		    android:layout_weight="15">
+		    
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical" >
+		    
+		    	<TextView
+				    android:id="@+id/postGameMessageTextView"
+				    android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+				    android:text=""
+				    />
+		    
+		       	<TableLayout
+		            android:id="@+id/scoreBoardTable"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            >
+		            
+		            <TableRow
+			            android:id="@+id/headingsTableRow"
+			            android:layout_height="wrap_content"
+			            android:layout_width="match_parent"
+			            >
+			
+			            <TextView
+			                android:id="@+id/rankTextView" android:text="Rank:"
+			                android:layout_weight="1"
+			                style="@style/TableRowTextViewStyle"
+							android:textStyle="bold"/>
+			
+			            <TextView
+			                android:id="@+id/timeTextView" android:text="Date/Time:"
+			                android:layout_weight="3" 
+							style="@style/TableRowTextViewStyle"
+							android:textStyle="bold" />
+			
+			            <TextView
+			                android:id="@+id/scoreTextView" android:text="Score:"
+			                android:layout_weight="1" 
+							style="@style/TableRowTextViewStyle"
+							android:textStyle="bold" />
+		
+			        </TableRow>
+
+		        </TableLayout>
+		        
+			</LinearLayout>
+		        
+		</ScrollView>
+		
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp" 
+		android:layout_weight="1" >
+            
+		<Button
+			android:id="@+id/yesButton"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:text="Play again?" />
+		
+		<Button
+			android:id="@+id/noButton"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:text="Quit" />
+            	
+    </LinearLayout>
+ 
+</LinearLayout>
