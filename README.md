@@ -1,10 +1,12 @@
 ## Synopsis
 
-An Android game that displays circles randomly at an increasing speed rate. If you miss 5 in a row, its game over! This can be found on the Android Play Store at: https://play.google.com/store/apps/details?id=com.dermotblair.touchball&hl=en
+An Android game that displays circles randomly at an increasing speed rate. If you miss 5 in a row, its game over! 
+
+This can be found on the Android Play Store at: https://play.google.com/store/apps/details?id=com.dermotblair.touchball&hl=en
 
 ## Motivation
 
-This project can be used as a demonstration of a number of features in the Android API. These include multi-threaded, graphics and audio playback.
+This project can be used as a demonstration of a number of features of the Android API. These include multi-threading, graphics and audio playback.
 
 ## Installation
 
